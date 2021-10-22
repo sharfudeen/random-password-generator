@@ -36,3 +36,10 @@ function generatePassword() {
   }
   document.getElementById("generatedPassword").value = finalpassword;
 }
+function copy() {
+    var copyText = document.getElementById("generatedPassword");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    console.log("copied :", copyText.value);
+}
