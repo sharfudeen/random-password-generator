@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator by Sharfudeen</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Password Generator</h1>
+      <div>
+        <input
+          name="generatedPassword"
+          id="generatedPassword"
+          value="Your random password will appear here"
+        />
+      </div>
+      <form name="passwordGenerator">
+        <div>
+          <label for="uppercase"> Uppercase </label>
+          <input type="checkbox" name="uppercase" id="uppercase" checked />
+        </div>
+        <div>
+          <label for="lowercase"> Lowercase </label>
+          <input type="checkbox" name="lowercase" id="lowercase" checked />
+        </div>
+        <div>
+          <label for="numbers"> Numbers </label>
+          <input type="checkbox" name="numbers" id="numbers" checked />
+        </div>
+        <div>
+          <label for="symbols"> Symbols </label>
+          <input type="checkbox" name="symbols" id="symbols" checked />
+        </div>
+        <div>
+          <label for="length"> Length </label>
+          <input type="number" name="length" id="length" value="12" />
+        </div>
+        <div>
+          <input type="button" value="Generate" onclick="generatePassword()" />
+        </div>
+      </form>
+    </div>
+    <script src="./assets/js/passwordGnerator.js"></script>
+  </body>
+</html>
